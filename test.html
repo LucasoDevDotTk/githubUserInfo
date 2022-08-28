@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - paths:
+            - ./python/get_userinfo.py
+    </py-env>
+</head>
+<body>
+    <py-script>
+import get_userinfo
+from js import console
+
+user = "LucasoDevDotTk"
+
+user_info = get_userinfo.get_userinfo(user)
+
+    </py-script>
+</body>
+</html>
