@@ -5,25 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
     <link rel="stylesheet" href="./css/main.css" />
 
     <title>GitHub User Info</title>
   </head>
-  <body class="font-poppins">
-    <nav>
-        
+  <body
+    style="background-image: url('./assets/blurry_blob.svg')"
+    class="relative font-poppins bg-ghGrey min-h-screen bg-no-repeat bg-center bg-contain m-10"
+  >
+    <nav class="block w-full">
+      <div class="block md:flex mt-5 w-full">
+        <div class="flex justify-center md:text-left pt2 items-center">
+          <img class="w-72" src="./assets/logo.svg" />
+        </div>
+        <div class="hidden md:flex items-center">
+          <img class="ml-5" src="./assets/line.svg" />
+        </div>
+        <div
+          class="text-e6 text-xl block md:flex items-center text-center md:text-left mt-5 md:mt-0"
+        >
+          <a
+            class="mx-5 hover:text-[#FF007A] hover:font-semibold transition-all ease-in-out"
+            href="https://lucasodev.tk"
+            >Website</a
+          >
+          <a
+            class="mx-5 hover:text-[#FF007A] hover:font-semibold transition-all ease-in-out"
+            href="https://github.com"
+            >GitHub.com</a
+          >
+        </div>
+        <!-- <div class="hidden md:flex items-center text-right">
+          <a
+            class="p-3 px-14 border-2 rounded-lg text-white transition-all ease-in-out"
+            href="#"
+            >Services
+          </a>
+        </div> -->
+      </div>
     </nav>
     <div>
-        <h1 class="text-3xl text-center mt-28">GitHub User Info</h1>
+      <h1
+        class="text-5xl text-center mt-28 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] to-[#BD00FF]"
+      >
+        GitHub User Info
+      </h1>
     </div>
-    <div>
-    </div>
+    <div></div>
   </body>
 </html>
