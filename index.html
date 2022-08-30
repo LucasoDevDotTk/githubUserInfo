@@ -21,9 +21,9 @@
   </head>
   <body
     style="background-image: url('./assets/blurry_blob.svg')"
-    class="relative font-poppins bg-ghGrey min-h-screen bg-no-repeat bg-center bg-contain m-10 overflow-visible"
+    class="relative font-poppins bg-ghGrey min-h-screen bg-no-repeat bg-center bg-contain overflow-visible"
   >
-    <nav class="block w-full">
+    <nav class="block w-full m-10">
       <div class="block md:flex mt-5 w-full">
         <div class="flex justify-center md:text-left pt2 items-center">
           <img class="w-72" src="./assets/logo.svg" />
@@ -56,11 +56,18 @@
     </nav>
     <div>
       <h1
-        class="text-5xl text-center mt-28 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] to-[#BD00FF]"
+        class="text-5xl text-center mt-48 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] to-[#BD00FF]"
       >
         GitHub User Info
       </h1>
+      <div class="flex justify-center mt-16">
+        <input class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50" id="user_input"></input>
+      </div>
     </div>
+    <footer class="text-center bg-ghDarkGrey text-e6 font-normal mt-10 p-14">
+      <p>We are not affiliated with or endorsed by GitHub, Inc.</p>
+      <p>Copyright © 2022 LucasoDevDotTk and projects contributors </p>
+    </footer>
   </body>
 </html>
 
