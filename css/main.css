@@ -576,8 +576,8 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-48 {
-  margin-top: 12rem;
+.mt-96 {
+  margin-top: 24rem;
 }
 
 .mt-16 {
@@ -586,10 +586,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-96 {
-  margin-top: 24rem;
 }
 
 .block {
@@ -614,10 +610,6 @@ video {
 
 .min-h-full {
   min-height: 100%;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-72 {

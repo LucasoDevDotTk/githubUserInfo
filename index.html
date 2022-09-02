@@ -17,6 +17,11 @@
 
     <link rel="stylesheet" href="./css/main.css" />
 
+    <py-env>
+      - paths:
+          - ./python/get_userinfo.py
+    </py-env>
+
     <title>GitHub User Info</title>
   </head>
   <body
@@ -56,9 +61,13 @@
             GitHub User Info
           </h1>
           <div class="flex justify-center mt-16">
-            <input class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50" id="user_input"></input>
+            <input placeholder="Please enter github user..." type="text" name="user_input" class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50" id="user_input"></input>
+          </div>
+          <div class="flex justify-center mt-16">
+            <input pys-onClick="run" type="submit" id="run" value="Run" class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50"></input>
           </div>
         </div>
+        <p id="output"></p>
       </div>
     </div>
     <footer class="text-center bg-ghDarkGrey text-e6 font-normal mt-10 p-14">
@@ -67,4 +76,5 @@
     </footer>
   </body>
 </html>
+<py-script src="./python/main.py"/>
 
