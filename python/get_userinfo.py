@@ -1,5 +1,7 @@
 from js import XMLHttpRequest
 from js import console
+import json
+
 
 def get_userinfo(user):
     request = XMLHttpRequest.new()

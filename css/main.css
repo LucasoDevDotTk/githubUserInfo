@@ -588,6 +588,14 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-\[45vh\] {
+  margin-top: 45vh;
+}
+
+.mt-\[30vh\] {
+  margin-top: 30vh;
+}
+
 .block {
   display: block;
 }

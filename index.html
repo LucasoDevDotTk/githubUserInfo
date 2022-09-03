@@ -17,12 +17,12 @@
 
     <link rel="stylesheet" href="./css/main.css" />
 
-    <py-env>
-      - paths:
-          - ./python/get_userinfo.py
-    </py-env>
-
     <title>GitHub User Info</title>
+
+    <py-env>
+      - paths: 
+        - ./python/get_userinfo.py 
+    </py-env>
   </head>
   <body
     style="background-image: url('./assets/blurry_blob.svg')"
@@ -53,28 +53,30 @@
           </div>
         </div>
       </nav>
-      <div class="min-h-full flex items-center justify-center">
-        <div>
-          <h1
-            class="text-5xl text-center mt-96 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] to-[#BD00FF]"
-          >
-            GitHub User Info
-          </h1>
-          <div class="flex justify-center mt-16">
-            <input placeholder="Please enter github user..." type="text" name="user_input" class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50" id="user_input"></input>
-          </div>
-          <div class="flex justify-center mt-16">
-            <input pys-onClick="run" type="submit" id="run" value="Run" class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50"></input>
-          </div>
+
+      <div class="block mt-[30vh]">
+        <h1
+          class="text-5xl text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] to-[#BD00FF]"
+        >
+          GitHub User Info
+        </h1>
+        <div class="flex justify-center mt-16">
+          <input placeholder="Please enter github user..." id="user_input" type="text" name="user_input" class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50"></input>
         </div>
-        <p id="output"></p>
+        <div class="flex justify-center mt-10">
+          <input pys-onClick="run" type="submit" id="run" value="Run" class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50"></input>
+        </div>
       </div>
+
+      <div class="text-e6 text-center" id="output"></div>
+
     </div>
     <footer class="text-center bg-ghDarkGrey text-e6 font-normal mt-10 p-14">
       <p>We are not affiliated with or endorsed by GitHub, Inc.</p>
       <p>Copyright © 2022 LucasoDevDotTk and projects contributors </p>
     </footer>
+
+    <py-script src="./python/main.py"/>
   </body>
 </html>
-<py-script src="./python/main.py"/>
 
