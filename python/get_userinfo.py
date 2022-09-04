@@ -1,6 +1,5 @@
 from js import XMLHttpRequest
 from js import console
-import json
 
 
 def get_userinfo(user):
@@ -9,6 +8,6 @@ def get_userinfo(user):
     request.send(None)
     output = str(request.response)
 
-    console.log(f"API Call run: {output}")
+    console.log(f"API is running: {output}")
 
     return output
