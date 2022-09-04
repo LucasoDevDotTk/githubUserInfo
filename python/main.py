@@ -58,30 +58,33 @@ def run(*args, **kwargs):
     console.log(f"Username entered: {username}")
 
     # Production code
-    # api = json.loads(get_userinfo(str(username)))
+    api = json.loads(get_userinfo(str(username)))
 
-api = json.loads(TEST_API)
+    # Api test for developing
+    # api = json.loads(TEST_API)
 
-# OUTPUT
+    # OUTPUT
 
-usr = document.getElementById("username")
-usr.innerHTML = api["login"]
+    usr = document.getElementById("username")
+    usr.innerHTML = api["login"]
 
-avatar = document.getElementById("avatar")
-avatar.setAttribute("src", "https://avatars.githubusercontent.com/u/80215223?v=4")
+    avatar = document.getElementById("avatar")
+    avatar.setAttribute("src", api['avatar_url'])
 
-usr_type = document.getElementById("usr_type")
-usr_type.innerHTML = f"type: {api['type']}"
+    usr_type = document.getElementById("usr_type")
+    usr_type.innerHTML = f"type: {api['type']}"
 
-usr_id = document.getElementById("usr_id")
-usr_id.innerHTML = f"id: {api['id']}"
+    usr_id = document.getElementById("usr_id")
+    usr_id.innerHTML = f"id: {api['id']}"
 
-node_id = document.getElementById("node_id")
-node_id.innerHTML = f"node id: {api['node_id']}"
+    node_id = document.getElementById("node_id")
+    node_id.innerHTML = f"node id: {api['node_id']}"
 
-site_admin = document.getElementById("site_admin")
-site_admin.innerHTML = f"Site Admin: {api['site_admin']}"
+    site_admin = document.getElementById("site_admin")
+    site_admin.innerHTML = f"Site Admin: {api['site_admin']}"
 
+    location = document.getElementById("location")
+    location.innerHTML = f"Location: {api['location']}"
 
-
-    
+    email = document.getElementById("email")
+    email.innerHTML = f"Email: {api['email']}"

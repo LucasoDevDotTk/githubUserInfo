@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
@@ -68,17 +72,20 @@
         </div>
       </div>
 
-      <div class="text-e6 m-40 border-black" id="output">
-        <div class="flex items-center">
-          <p class="text-4xl font-bold" id="username"></p>
-          <img class="w-52 m-5" id="avatar" src="404"/>
+      <section class="font-lekton flex justify-center border-black border-2 text-e6 m-10 p-10 rounded-md">
+        <div id="output">
+          <div class="flex items-center">
+            <p class="text-4xl font-bold" id="username">OUTPUT</p>
+            <img class="w-32 m-5" id="avatar" src=""/>
+          </div>
+          <p id="usr_type"></p>
+          <p id="usr_id"></p>
+          <p id="node_id"></p>
+          <p id="site_admin"></p>      
+          <p id="location"></p> 
+          <p id="email"></p> 
         </div>
-        <p id="usr_type"></p>
-        <p id="usr_id"></p>
-        <p id="node_id"></p>
-        <p id="site_admin"></p>
-        
-      </div>
+      </section>
 
     </div>
     <footer class="text-center bg-ghDarkGrey text-e6 font-normal mt-10 p-14">
