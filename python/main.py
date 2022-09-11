@@ -42,11 +42,16 @@ TEST_API = """ {
 
 """
 
-def create_element(element_name, innerText, pos):
-    element = document.createElement(element_name)
-    element.innerText = innerText
+def create_element(element_id, inner_text, pos):
+    element = document.createElement(element_id)
+    element.innerText = inner_text
     document.getElementById(str(pos)).append(element)
-    console.log(f"Made element: {element_name}, {innerText} at {pos}")
+    console.log(f"Made element: {element_id}, {inner_text} at {pos}")
+
+def change_inner_text(element_id, inner_text):
+    element = document.getElementById(element_id)
+    element.innerText = inner_text
+    console.log(f"Changed element: {element_id} with innerText of {inner_text}")
 
 def run(*args, **kwargs):
     console.log("Function 'run' is running")
@@ -65,26 +70,33 @@ def run(*args, **kwargs):
 
     # OUTPUT
 
-    usr = document.getElementById("username")
-    usr.innerHTML = api["login"]
+    change_inner_text("username", api["login"])
+
+    change_inner_text("name", api["name"])
 
     avatar = document.getElementById("avatar")
     avatar.setAttribute("src", api['avatar_url'])
 
-    usr_type = document.getElementById("usr_type")
-    usr_type.innerHTML = f"type: {api['type']}"
+    change_inner_text("bio", api["bio"])
 
-    usr_id = document.getElementById("usr_id")
-    usr_id.innerHTML = f"id: {api['id']}"
+    change_inner_text("usr_type", f"type: {api['type']}")
 
-    node_id = document.getElementById("node_id")
-    node_id.innerHTML = f"node id: {api['node_id']}"
+    change_inner_text("usr_id", f"id: {api['id']}")
 
-    site_admin = document.getElementById("site_admin")
-    site_admin.innerHTML = f"Site Admin: {api['site_admin']}"
+    change_inner_text("node_id", f"node id: {api['node_id']}")
 
-    location = document.getElementById("location")
-    location.innerHTML = f"Location: {api['location']}"
+    change_inner_text("site_admin", f"Site Admin: {api['site_admin']}")
 
-    email = document.getElementById("email")
-    email.innerHTML = f"Email: {api['email']}"
+    change_inner_text("created_at", f"Updated: {api['updated_at']}")
+
+    change_inner_text("updated_at", f"Created: {api['created_at']}")
+
+    change_inner_text("location", f"Location: {api['location']}")
+
+    change_inner_text("company", f"Company: {api['company']}")
+
+    change_inner_text("email", f"Email: {api['email']}")
+
+    change_inner_text("hireable", f"Hireable: {api['hireable']}")
+
+
