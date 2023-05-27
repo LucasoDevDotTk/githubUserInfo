@@ -72,9 +72,9 @@
         </div>
       </div>
 
-      <section class="font-lekton flex justify-center border-black border-2 text-e6 m-10 p-10 rounded-md">
+      <section class="font-lekton mx-auto container border-black border-2 text-e6 m-10 p-10 rounded-md">
         <div id="output">
-          <div class="flex items-center">
+          <div>
             <div class="block">
               <p class="text-4xl font-bold" id="username">OUTPUT</p>
               <p id="name"></p>
@@ -98,6 +98,13 @@
           <p id="hireable"></p>
         </div>
       </section>
+
+      <div class="flex justify-center mt-10">
+        <input pys-onClick="display_api_text" type="submit" id="display_api_text_btn" value="API RAW TEXT" class="w-96 h-14 rounded-md text-2xl text-e6 bg-black/50"></input>
+      </div>
+
+      <div id="api_text" class="text-e6 container mx-auto m-10">
+      </div>
 
     </div>
     <footer class="text-center bg-ghDarkGrey text-e6 font-normal mt-10 p-14">
